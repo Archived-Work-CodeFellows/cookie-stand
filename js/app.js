@@ -19,7 +19,18 @@ var pike = {
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*cookieAvg);
     }
     return this.cookiePerHour;
+  },
+  writeToDOM: function() {
+    var uList = document.createElement('ul');
+    var listArr = [];
+    for(var i = 0; i < this.custPerHour.length; i++) {
+      listArr.push('<li>'+this.cookiePerHour[i]+'</li>');
+    }
+    var cookieSales = listArr.join('');
+    var position = document.getElementsByTagName(uList)[0];
+    position.appendChild(cookieSales);
   }
 };
 pike.customerPH(pike.custMin,pike.custMax);
 pike.cookiePH(pike.cookieAvg);
+pike.writeToDOM();
