@@ -20,15 +20,22 @@ var pike = {
     }
     return this.cookiePerHour;
   },
-  writeToDOM: function() {
+  writeToDOM: function() { 
+    var container = document.createElement('div');
+    document.body.appendChild(container);
+    var heading = document.createElement('p');
+    var headContent = document.createTextNode('Cool Title Test');
+    heading.appendChild(headContent);
+    container.appendChild(heading);
+
     var uList = document.createElement('ul');
-    var listArr = [];
     for(var i = 0; i < this.custPerHour.length; i++) {
-      listArr.push('<li>'+this.cookiePerHour[i]+'</li>');
+      var list = document.createElement('li');
+      var listArr = document.createTextNode(this.cookiePerHour[i]);
+      list.appendChild(listArr);
+      uList.appendChild(list)[i];
     }
-    var cookieSales = listArr.join('');
-    var position = document.getElementsByTagName(uList)[0];
-    position.appendChild(cookieSales);
+    container.appendChild(uList);
   }
 };
 pike.customerPH(pike.custMin,pike.custMax);
