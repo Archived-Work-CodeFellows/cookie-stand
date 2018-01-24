@@ -1,11 +1,16 @@
 'use strict';
 
+//define div container
+var container = document.createElement('div');
+document.body.appendChild(container);
+
 var pike = {
   custMin: 23,
   custMax: 65,
   cookieAvg: 6.3,
   custPerHour: [],
   cookiePerHour: [],
+  totalCookies: 0,
   customerPH: function(custMin,custMax) {
     this.custPerHour.length = 14;
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -20,11 +25,15 @@ var pike = {
     }
     return this.cookiePerHour;
   },
-  writeToDOM: function() { 
-    var container = document.createElement('div');
-    document.body.appendChild(container);
+  cookieSum: function() {
+    for(var i = 0; i < this.cookiePerHour.length; i++) {
+      this.totalCookies += this.cookiePerHour[i];
+    }
+    return this.totalCookies;
+  },
+  writeToDOM: function() {
     var heading = document.createElement('p');
-    var headContent = document.createTextNode('Cool Title Test');
+    var headContent = document.createTextNode('1st and Pike');
     heading.appendChild(headContent);
     container.appendChild(heading);
 
@@ -36,8 +45,13 @@ var pike = {
       uList.appendChild(list)[i];
     }
     container.appendChild(uList);
+    var bottom = document.createElement('p');
+    container.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    bottom.appendChild(bottomContent);
   }
 };
 pike.customerPH(pike.custMin,pike.custMax);
 pike.cookiePH(pike.cookieAvg);
+pike.cookieSum();
 pike.writeToDOM();
