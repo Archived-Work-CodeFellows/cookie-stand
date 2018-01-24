@@ -37,6 +37,7 @@ var pike = {
     this.cookieSum();
 
     var heading = document.createElement('p');
+    heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('1st and Pike');
     heading.appendChild(headContent);
     container.appendChild(heading);
@@ -50,6 +51,7 @@ var pike = {
     }
     container.appendChild(uList);
     var bottom = document.createElement('p');
+    bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
     var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
     bottom.appendChild(bottomContent);
@@ -88,6 +90,7 @@ var seaTac = {
     this.cookieSum();
 
     var heading = document.createElement('p');
+    heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('SeaTac Airport');
     heading.appendChild(headContent);
     container.appendChild(heading);
@@ -101,6 +104,7 @@ var seaTac = {
     }
     container.appendChild(uList);
     var bottom = document.createElement('p');
+    bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
     var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
     bottom.appendChild(bottomContent);
@@ -140,6 +144,7 @@ var seaCenter = {
     this.cookieSum();
 
     var heading = document.createElement('p');
+    heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Seattle Center');
     heading.appendChild(headContent);
     container.appendChild(heading);
@@ -153,6 +158,7 @@ var seaCenter = {
     }
     container.appendChild(uList);
     var bottom = document.createElement('p');
+    bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
     var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
     bottom.appendChild(bottomContent);
@@ -192,6 +198,7 @@ var capHill = {
     this.cookieSum();
 
     var heading = document.createElement('p');
+    heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Capitol Hill');
     heading.appendChild(headContent);
     container.appendChild(heading);
@@ -205,6 +212,7 @@ var capHill = {
     }
     container.appendChild(uList);
     var bottom = document.createElement('p');
+    bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
     var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
     bottom.appendChild(bottomContent);
@@ -244,6 +252,7 @@ var alki = {
     this.cookieSum();
 
     var heading = document.createElement('p');
+    heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Alki');
     heading.appendChild(headContent);
     container.appendChild(heading);
@@ -257,6 +266,7 @@ var alki = {
     }
     container.appendChild(uList);
     var bottom = document.createElement('p');
+    bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
     var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
     bottom.appendChild(bottomContent);
