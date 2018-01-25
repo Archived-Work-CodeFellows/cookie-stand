@@ -16,7 +16,7 @@ tableBottomContainer.setAttribute('id', 'tBot');
 
 var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 var operation = document.createElement('ul');
-for(var i = 0; i < 14; i++) {
+for(var i = 0; i < hours.length; i++) {
   var list = document.createElement('li');
   var listArr = document.createTextNode(hours[i]);
   list.appendChild(listArr);
@@ -32,14 +32,14 @@ var pike = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -85,14 +85,14 @@ var seaTac = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -139,14 +139,14 @@ var seaCenter = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -193,14 +193,14 @@ var capHill = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -247,14 +247,14 @@ var alki = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
