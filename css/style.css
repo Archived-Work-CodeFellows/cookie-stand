@@ -1,31 +1,41 @@
 .tableHead {
     /*float: left;*/
 }
+
+.nav{
+    text-align: center;
+}
+
 li {
     list-style: none;
 }
 div {
     text-align: center;
-    align-content: center;
+
 }
 
 #tHead {
     padding: 1px;
+    font-size: 16px;
+    margin: 0 0 0 125px;
+}
+.tableHead {
+    margin: 0 4px;
 }
 #tBody {
-    text-align: center;
+    /*text-align: center;*/
 }
 #tBody ul {
-    align-content: center;
+    
     display: inline-block;
     font-size: 15px;
-    margin: 12px;
+    margin: 0 15px;
 }
 #tBot {
-    margin: 0 25px;
+     margin: 0 0 0 100px;
 }
 .tableBottom{
-    margin: 0 4px;
+    margin: 0 8px;
 }
 h1{
     text-align: center;

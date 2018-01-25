@@ -14,7 +14,15 @@ tableHeadContainer.setAttribute('id', 'tHead');
 tableBodyContainer.setAttribute('id', 'tBody');
 tableBottomContainer.setAttribute('id', 'tBot');
 
-
+var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+var operation = document.createElement('ul');
+for(var i = 0; i < 14; i++) {
+  var list = document.createElement('li');
+  var listArr = document.createTextNode(hours[i]);
+  list.appendChild(listArr);
+  operation.appendChild(list)[i];
+}
+tableBodyContainer.appendChild(operation);
 
 var pike = {
   custMin: 23,
