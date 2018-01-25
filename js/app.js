@@ -2,7 +2,19 @@
 
 //define div container
 var container = document.createElement('div');
+var tableHeadContainer = document.createElement('div');
+var tableBodyContainer = document.createElement('div');
+var tableBottomContainer = document.createElement('div');
 document.body.appendChild(container);
+container.appendChild(tableHeadContainer);
+container.appendChild(tableBodyContainer);
+container.appendChild(tableBottomContainer);
+
+tableHeadContainer.setAttribute('id', 'tHead');
+tableBodyContainer.setAttribute('id', 'tBody');
+tableBottomContainer.setAttribute('id', 'tBot');
+
+
 
 var pike = {
   custMin: 23,
@@ -36,11 +48,11 @@ var pike = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
+    var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('1st and Pike');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -89,11 +101,11 @@ var seaTac = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
+    var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('SeaTac Airport');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -143,11 +155,11 @@ var seaCenter = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
+    var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Seattle Center');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -197,11 +209,11 @@ var capHill = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
+    var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Capitol Hill');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -251,11 +263,11 @@ var alki = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
+    var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
     var headContent = document.createTextNode('Alki');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -278,3 +290,4 @@ seaTac.writeToDOM();
 seaCenter.writeToDOM();
 capHill.writeToDOM();
 alki.writeToDOM();
+
