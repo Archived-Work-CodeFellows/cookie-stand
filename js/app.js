@@ -62,10 +62,10 @@ var pike = {
       uList.appendChild(list)[i];
     }
     tableBodyContainer.appendChild(uList);
-    var bottom = document.createElement('p');
+    var bottom = document.createElement('span');
     bottom.setAttribute('class','tableBottom');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -115,10 +115,10 @@ var seaTac = {
       uList.appendChild(list)[i];
     }
     tableBodyContainer.appendChild(uList);
-    var bottom = document.createElement('p');
+    var bottom = document.createElement('span');
     bottom.setAttribute('class','tableBottom');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -169,10 +169,10 @@ var seaCenter = {
       uList.appendChild(list)[i];
     }
     tableBodyContainer.appendChild(uList);
-    var bottom = document.createElement('p');
+    var bottom = document.createElement('span');
     bottom.setAttribute('class','tableBottom');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -223,10 +223,10 @@ var capHill = {
       uList.appendChild(list)[i];
     }
     tableBodyContainer.appendChild(uList);
-    var bottom = document.createElement('p');
+    var bottom = document.createElement('span');
     bottom.setAttribute('class','tableBottom');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -277,10 +277,10 @@ var alki = {
       uList.appendChild(list)[i];
     }
     tableBodyContainer.appendChild(uList);
-    var bottom = document.createElement('p');
+    var bottom = document.createElement('span');
     bottom.setAttribute('class','tableBottom');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };

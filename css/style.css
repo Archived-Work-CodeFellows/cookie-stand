@@ -4,12 +4,29 @@
 li {
     list-style: none;
 }
+div {
+    text-align: center;
+    align-content: center;
+}
 
 #tHead {
-    text-align: center;
-    display: inline;
     padding: 1px;
 }
+#tBody {
+    text-align: center;
+}
 #tBody ul {
-    float: left;
+    align-content: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 12px;
+}
+#tBot {
+    margin: 0 25px;
+}
+.tableBottom{
+    margin: 0 4px;
+}
+h1{
+    text-align: center;
 }
