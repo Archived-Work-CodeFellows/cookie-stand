@@ -4,7 +4,12 @@
 li {
     list-style: none;
 }
+
 #tHead {
+    text-align: center;
     display: inline;
     padding: 1px;
+}
+#tBody ul {
+    float: left;
 }

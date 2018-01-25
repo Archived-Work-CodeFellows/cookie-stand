@@ -50,7 +50,7 @@ var pike = {
 
     var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
-    var headContent = document.createTextNode('1st and Pike');
+    var headContent = document.createTextNode('1st and Pike ');
     heading.appendChild(headContent);
     tableHeadContainer.appendChild(heading);
 
@@ -61,7 +61,7 @@ var pike = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
+    tableBodyContainer.appendChild(uList);
     var bottom = document.createElement('p');
     bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
@@ -103,7 +103,7 @@ var seaTac = {
 
     var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
-    var headContent = document.createTextNode('SeaTac Airport');
+    var headContent = document.createTextNode('SeaTac Airport ');
     heading.appendChild(headContent);
     tableHeadContainer.appendChild(heading);
 
@@ -114,7 +114,7 @@ var seaTac = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
+    tableBodyContainer.appendChild(uList);
     var bottom = document.createElement('p');
     bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
@@ -157,7 +157,7 @@ var seaCenter = {
 
     var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
-    var headContent = document.createTextNode('Seattle Center');
+    var headContent = document.createTextNode('Seattle Center ');
     heading.appendChild(headContent);
     tableHeadContainer.appendChild(heading);
 
@@ -168,7 +168,7 @@ var seaCenter = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
+    tableBodyContainer.appendChild(uList);
     var bottom = document.createElement('p');
     bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
@@ -211,7 +211,7 @@ var capHill = {
 
     var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
-    var headContent = document.createTextNode('Capitol Hill');
+    var headContent = document.createTextNode('Capitol Hill ');
     heading.appendChild(headContent);
     tableHeadContainer.appendChild(heading);
 
@@ -222,7 +222,7 @@ var capHill = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
+    tableBodyContainer.appendChild(uList);
     var bottom = document.createElement('p');
     bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
@@ -265,7 +265,7 @@ var alki = {
 
     var heading = document.createElement('span');
     heading.setAttribute('class', 'tableHead');
-    var headContent = document.createTextNode('Alki');
+    var headContent = document.createTextNode('Alki ');
     heading.appendChild(headContent);
     tableHeadContainer.appendChild(heading);
 
@@ -276,7 +276,7 @@ var alki = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
+    tableBodyContainer.appendChild(uList);
     var bottom = document.createElement('p');
     bottom.setAttribute('class','tableBottom');
     container.appendChild(bottom);
