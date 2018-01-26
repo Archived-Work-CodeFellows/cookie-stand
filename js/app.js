@@ -2,7 +2,27 @@
 
 //define div container
 var container = document.createElement('div');
+var tableHeadContainer = document.createElement('div');
+var tableBodyContainer = document.createElement('div');
+var tableBottomContainer = document.createElement('div');
 document.body.appendChild(container);
+container.appendChild(tableHeadContainer);
+container.appendChild(tableBodyContainer);
+container.appendChild(tableBottomContainer);
+
+tableHeadContainer.setAttribute('id', 'tHead');
+tableBodyContainer.setAttribute('id', 'tBody');
+tableBottomContainer.setAttribute('id', 'tBot');
+
+var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+var operation = document.createElement('ul');
+for(var i = 0; i < hours.length; i++) {
+  var list = document.createElement('li');
+  var listArr = document.createTextNode(hours[i]);
+  list.appendChild(listArr);
+  operation.appendChild(list)[i];
+}
+tableBodyContainer.appendChild(operation);
 
 var pike = {
   custMin: 23,
@@ -12,14 +32,14 @@ var pike = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -36,10 +56,11 @@ var pike = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
-    var headContent = document.createTextNode('1st and Pike');
+    var heading = document.createElement('span');
+    heading.setAttribute('class', 'tableHead');
+    var headContent = document.createTextNode('1st and Pike ');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -48,10 +69,11 @@ var pike = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
-    var bottom = document.createElement('p');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBodyContainer.appendChild(uList);
+    var bottom = document.createElement('span');
+    bottom.setAttribute('class','tableBottom');
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -63,14 +85,14 @@ var seaTac = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -87,10 +109,11 @@ var seaTac = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
-    var headContent = document.createTextNode('SeaTac Airport');
+    var heading = document.createElement('span');
+    heading.setAttribute('class', 'tableHead');
+    var headContent = document.createTextNode('SeaTac Airport ');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -99,10 +122,11 @@ var seaTac = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
-    var bottom = document.createElement('p');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBodyContainer.appendChild(uList);
+    var bottom = document.createElement('span');
+    bottom.setAttribute('class','tableBottom');
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -115,14 +139,14 @@ var seaCenter = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -139,10 +163,11 @@ var seaCenter = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
-    var headContent = document.createTextNode('Seattle Center');
+    var heading = document.createElement('span');
+    heading.setAttribute('class', 'tableHead');
+    var headContent = document.createTextNode('Seattle Center ');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -151,10 +176,11 @@ var seaCenter = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
-    var bottom = document.createElement('p');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBodyContainer.appendChild(uList);
+    var bottom = document.createElement('span');
+    bottom.setAttribute('class','tableBottom');
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -167,14 +193,14 @@ var capHill = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -191,10 +217,11 @@ var capHill = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
-    var headContent = document.createTextNode('Capitol Hill');
+    var heading = document.createElement('span');
+    heading.setAttribute('class', 'tableHead');
+    var headContent = document.createTextNode('Capitol Hill ');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -203,10 +230,11 @@ var capHill = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
-    var bottom = document.createElement('p');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBodyContainer.appendChild(uList);
+    var bottom = document.createElement('span');
+    bottom.setAttribute('class','tableBottom');
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -219,14 +247,14 @@ var alki = {
   cookiePerHour: [],
   totalCookies: 0,
   customerPH: function() {
-    this.custPerHour.length = 14;
+    this.custPerHour.length = hours.length;
     for(var i = 0; i < this.custPerHour.length; i++) {
       this.custPerHour[i] = Math.ceil(Math.random()*(this.custMax-this.custMin)+this.custMin);
     }
     return this.custPerHour;
   },
   cookiePH: function() {
-    this.cookiePerHour.length = 14;
+    this.cookiePerHour.length = hours.length;
     for(var i = 0; i < this.cookiePerHour.length; i++){
       this.cookiePerHour[i] = Math.ceil(this.custPerHour[i]*this.cookieAvg);
     }
@@ -243,10 +271,11 @@ var alki = {
     this.cookiePH();
     this.cookieSum();
 
-    var heading = document.createElement('p');
-    var headContent = document.createTextNode('Alki');
+    var heading = document.createElement('span');
+    heading.setAttribute('class', 'tableHead');
+    var headContent = document.createTextNode('Alki ');
     heading.appendChild(headContent);
-    container.appendChild(heading);
+    tableHeadContainer.appendChild(heading);
 
     var uList = document.createElement('ul');
     for(var i = 0; i < this.custPerHour.length; i++) {
@@ -255,10 +284,11 @@ var alki = {
       list.appendChild(listArr);
       uList.appendChild(list)[i];
     }
-    container.appendChild(uList);
-    var bottom = document.createElement('p');
-    container.appendChild(bottom);
-    var bottomContent = document.createTextNode('Total: ' + this.totalCookies);
+    tableBodyContainer.appendChild(uList);
+    var bottom = document.createElement('span');
+    bottom.setAttribute('class','tableBottom');
+    tableBottomContainer.appendChild(bottom);
+    var bottomContent = document.createTextNode('Total: ' + this.totalCookies + ' ');
     bottom.appendChild(bottomContent);
   }
 };
@@ -268,3 +298,4 @@ seaTac.writeToDOM();
 seaCenter.writeToDOM();
 capHill.writeToDOM();
 alki.writeToDOM();
+
