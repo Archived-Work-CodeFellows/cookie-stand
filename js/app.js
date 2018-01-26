@@ -2,20 +2,21 @@
 
 //define div container
 var container = document.createElement('div');
-var tableHeadContainer = document.createElement('div');
-var tableBodyContainer = document.createElement('div');
-var tableBottomContainer = document.createElement('div');
+// var tableHeadContainer = document.createElement('div');
+// var tableBodyContainer = document.createElement('div');
+// var tableBottomContainer = document.createElement('div');
 document.body.appendChild(container);
-container.appendChild(tableHeadContainer);
-container.appendChild(tableBodyContainer);
-container.appendChild(tableBottomContainer);
+// container.appendChild(tableHeadContainer);
+// container.appendChild(tableBodyContainer);
+// container.appendChild(tableBottomContainer);
 
-tableHeadContainer.setAttribute('id', 'tHead');
-tableBodyContainer.setAttribute('id', 'tBody');
-tableBottomContainer.setAttribute('id', 'tBot');
+// tableHeadContainer.setAttribute('id', 'tHead');
+// tableBodyContainer.setAttribute('id', 'tBody');
+// tableBottomContainer.setAttribute('id', 'tBot');
 
 var locations = [];
 var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+var netTotal = 0;
 
 // var operation = document.createElement('ul');
 // for(var i = 0; i < hours.length; i++) {
@@ -26,7 +27,7 @@ var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm'
 // }
 // tableBodyContainer.appendChild(operation);
 
-function MakeStand(name,custMinPerH,custMaxPerH,cookieAvg) {
+function MakeStore(name,custMinPerH,custMaxPerH,cookieAvg) {
 
   this.name = name;
   this.custMinPerH = custMinPerH;
@@ -48,12 +49,20 @@ function MakeStand(name,custMinPerH,custMaxPerH,cookieAvg) {
   };
   this.customerAndCookiePH();
 }
+function populateLocations() {
+  new MakeStore('First and Pike',23,65,6.3);
+  new MakeStore('SeaTac Airport',3,24,1.2);
+  new MakeStore('Seattle Center',11,38,3.7);
+  new MakeStore('Capitol Hill',20,38,2.3);
+  new MakeStore('Alki',2,16,4.6);
+}
+populateLocations();
 
-var pike = new MakeStand('First and Pike',23,65,6.3);
-var seaTac = new MakeStand('SeaTac Airport',3,24,1.2);
-var seaCenter = new MakeStand('Seattle Center',11,38,3.7);
-var capHill = new MakeStand('Capitol Hill',20,38,2.3);
-var alki = new MakeStand('Alki',2,16,4.6);
+function createTable(){
+  var table = document.createElement('table');
+  table.setAttribute('class', 'cookie-data');
+  container.appendChild(table);
+}
 
 // var pike = {
 //   custMin: 23,
