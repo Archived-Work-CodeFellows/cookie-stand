@@ -62,7 +62,21 @@ function createTable(){
   var table = document.createElement('table');
   table.setAttribute('class', 'cookie-data');
   container.appendChild(table);
+  // var trEl = document.createElement('tr');
+  // var thEl = document.createElement('th');
+  var tHeadings = [];
+  var tRows = [];
+  tRows.push(document.createElement('tr'));
+  for(var i = -1; i <= hours.length; i++) {
+    tHeadings[i] = document.createElement('th');
+    tHeadings[i].textContent = hours[i];
+    tRows[0].appendChild(tHeadings[i]);
+  }
+  table.appendChild(tRows[0]);
+  // trEl.appendChild(thEl);
+  // table.appendChild(trEl);
 }
+createTable();
 
 // var pike = {
 //   custMin: 23,
