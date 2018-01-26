@@ -2,30 +2,11 @@
 
 //define div container
 var container = document.createElement('div');
-// var tableHeadContainer = document.createElement('div');
-// var tableBodyContainer = document.createElement('div');
-// var tableBottomContainer = document.createElement('div');
 document.body.appendChild(container);
-// container.appendChild(tableHeadContainer);
-// container.appendChild(tableBodyContainer);
-// container.appendChild(tableBottomContainer);
-
-// tableHeadContainer.setAttribute('id', 'tHead');
-// tableBodyContainer.setAttribute('id', 'tBody');
-// tableBottomContainer.setAttribute('id', 'tBot');
 
 var locations = [];
 var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 var netTotal = 0;
-
-// var operation = document.createElement('ul');
-// for(var i = 0; i < hours.length; i++) {
-//   var list = document.createElement('li');
-//   var listArr = document.createTextNode(hours[i]);
-//   list.appendChild(listArr);
-//   operation.appendChild(list)[i];
-// }
-// tableBodyContainer.appendChild(operation);
 
 function MakeStore(name,custMinPerH,custMaxPerH,cookieAvg) {
 
@@ -60,21 +41,29 @@ populateLocations();
 
 function createTable(){
   var table = document.createElement('table');
-  table.setAttribute('class', 'cookie-data');
+  table.setAttribute('id', 'cookie-data');
   container.appendChild(table);
-  // var trEl = document.createElement('tr');
-  // var thEl = document.createElement('th');
+
+  //Set table headings and begin table row array
   var tHeadings = [];
+  var tHeadingsName = [];
   var tRows = [];
-  tRows.push(document.createElement('tr'));
+  for(var j = -1; j <= locations.length; j++)tRows.push(document.createElement('tr'));
   for(var i = -1; i <= hours.length; i++) {
     tHeadings[i] = document.createElement('th');
     tHeadings[i].textContent = hours[i];
     tRows[0].appendChild(tHeadings[i]);
   }
   table.appendChild(tRows[0]);
-  // trEl.appendChild(thEl);
-  // table.appendChild(trEl);
+  console.log(tRows);
+  for(var k = 0; k < locations.length; k++){
+    tHeadingsName[k] = document.createElement('th');
+    tHeadingsName[k].setAttribute('scope','row');
+    tHeadingsName[k].textContent = locations[k].name;
+    tRows[k+1].appendChild(tHeadingsName[k]);
+    table.appendChild(tRows[k+1]);
+  }
+
 }
 createTable();
 
