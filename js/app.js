@@ -48,8 +48,8 @@ function createTable(){
   var tHeadings = [];
   var tHeadingsName = [];
   var tRows = [];
-  for(var j = -1; j <= locations.length; j++)tRows.push(document.createElement('tr'));
-  for(var i = -1; i <= hours.length; i++) {
+  for(var i = -1; i <= locations.length; i++)tRows.push(document.createElement('tr'));
+  for(i = -1; i <= hours.length; i++) {
     tHeadings[i] = document.createElement('th');
     tHeadings[i].textContent = hours[i];
     tRows[0].appendChild(tHeadings[i]);
@@ -63,7 +63,9 @@ function createTable(){
     tRows[k+1].appendChild(tHeadingsName[k]);
     table.appendChild(tRows[k+1]);
   }
-
+  for(i = 0; i <= hours.length; i++){
+    //tRows[1].textContent = locations[0].cookiePerHour[i];
+  }
 }
 createTable();
 
