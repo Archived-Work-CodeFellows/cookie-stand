@@ -55,9 +55,7 @@ function createTable(){
     tHeadings[i].textContent = hours[i];
     tRows[0].appendChild(tHeadings[i]);
   }
-  var thTotal = document.createElement('th');
-  thTotal.textContent = 'Total Cookies';
-  tRows[0].appendChild(thTotal);
+  console.log(tHeadings);
   table.appendChild(tRows[0]);
   console.log(tRows);
   //set tableHeadings for stores
@@ -73,26 +71,36 @@ function createTable(){
     tData[i].textContent = locations[0].cookiePerHour[i];
     tRows[1].appendChild(tData[i]);
   }
+  tData[15].textContent = locations[0].totalCookies;
+  tRows[1].appendChild(tData[15]);
   for(i = 0; i <= hours.length; i++){
     tData[i] = document.createElement('td');
     tData[i].textContent = locations[1].cookiePerHour[i];
     tRows[2].appendChild(tData[i]);
   }
+  tData[15].textContent = locations[1].totalCookies;
+  tRows[2].appendChild(tData[15]);
   for(i = 0; i <= hours.length; i++){
     tData[i] = document.createElement('td');
     tData[i].textContent = locations[2].cookiePerHour[i];
     tRows[3].appendChild(tData[i]);
   }
+  tData[15].textContent = locations[2].totalCookies;
+  tRows[3].appendChild(tData[15]);
   for(i = 0; i <= hours.length; i++){
     tData[i] = document.createElement('td');
     tData[i].textContent = locations[3].cookiePerHour[i];
     tRows[4].appendChild(tData[i]);
   }
+  tData[15].textContent = locations[3].totalCookies;
+  tRows[4].appendChild(tData[15]);
   for(i = 0; i <= hours.length; i++){
     tData[i] = document.createElement('td');
     tData[i].textContent = locations[4].cookiePerHour[i];
     tRows[5].appendChild(tData[i]);
   }
+  tData[15].textContent = locations[4].totalCookies;
+  tRows[5].appendChild(tData[15]);
 }
 createTable();
 
