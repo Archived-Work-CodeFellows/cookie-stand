@@ -1,8 +1,9 @@
 * {
     margin: 0;
+}
+body {
     background-color: rgb(160,126,102);
 }
-
 .nav li{
     display: inline;
     margin: 5px;
@@ -21,25 +22,44 @@ div {
     
 }
 .table-wrap{
+    overflow: auto;
     margin: auto;
-    margin-left: 25%;
+    margin-left: 15%;
 }
 img{
     width: 50%;
     height: 50%;
 }
+table {
+    empty-cells: hide;
+    vertical-align: bottom;
+}
 #cookie-data {
     border-collapse: collapse;
     margin-top: 30px;
 }
-#cookie-data tr:hover {
-    background-color: bisque;
+#store-name{
+    background-color: lightgray;
 }
-#cookie-data th, tr, td {
-    border: 1px solid black;
+#cookie-data th, td {
+    border-bottom: 1px solid black;
+    padding: 10px;
 }
 #cookie-data th, td {
     text-align: left;
+}
+#table-top {
+    background-color: lightblue;
+    height: 50px;
+}
+#total-per-hour {
+    background-color: lightyellow;
+}
+#store-total{
+    background-color: lightyellow;
+}
+#net-total {
+    background-color: yellow;
 }
 #hours {
     float: left;

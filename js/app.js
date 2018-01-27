@@ -40,6 +40,7 @@ MakeStore.prototype.render = function() {
   table.appendChild(tRow);
   var thEl = document.createElement('th');
   thEl.setAttribute('scope', 'row');
+  tRow.setAttribute('id', 'store-name');
   thEl.textContent = this.name;
   tRow.appendChild(thEl);
   var tData = [];
@@ -49,14 +50,16 @@ MakeStore.prototype.render = function() {
     tRow.appendChild(tData[i]);
   }
   var totalEl = document.createElement('td');
+  totalEl.setAttribute('id', 'store-total');
   totalEl.textContent = this.totalCookies;
   tRow.appendChild(totalEl);
 };
 function headerGenerator() {
   var tRow = document.createElement('tr');
+  tRow.setAttribute('id','table-top');
   table.appendChild(tRow);
-  var thEmpty = document.createElement('th');
-  tRow.appendChild(thEmpty);
+  var tdEmpty = document.createElement('td');
+  tRow.appendChild(tdEmpty);
   var thEl = [];
   for (var i = 0; i < hours.length; i++){
     thEl[i] = document.createElement('th');
@@ -64,6 +67,7 @@ function headerGenerator() {
     tRow.appendChild(thEl[i]);
   }
   var thEnd = document.createElement('th');
+  thEnd.setAttribute('id', 'store-total');
   thEnd.textContent = 'Total Cookies';
   tRow.appendChild(thEnd);
 }
@@ -72,6 +76,7 @@ function footerGenerator() {
   var tRow = document.createElement('tr');
   table.appendChild(tRow);
   var thBegin = document.createElement('th');
+  tRow.setAttribute('id','total-per-hour');
   thBegin.textContent = 'Totals';
   tRow.appendChild(thBegin);
   var total = 0;
@@ -86,6 +91,7 @@ function footerGenerator() {
     tRow.appendChild(tData[i]);
   }
   var totalData = document.createElement('td');
+  totalData.setAttribute('id','net-total');
   totalData.textContent = netTotal;
   tRow.appendChild(totalData);
 }
