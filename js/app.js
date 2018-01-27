@@ -77,7 +77,7 @@ function footerGenerator() {
   table.appendChild(tRow);
   var thBegin = document.createElement('th');
   tRow.setAttribute('id','total-per-hour');
-  thBegin.textContent = 'Totals';
+  thBegin.textContent = 'Totals/Hour';
   tRow.appendChild(thBegin);
   var total = 0;
   for(var i = 0; i < hours.length; i++) {

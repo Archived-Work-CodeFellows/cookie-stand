@@ -24,7 +24,7 @@ div {
 .table-wrap{
     overflow: auto;
     margin: auto;
-    margin-left: 15%;
+    margin-left: 13%;
 }
 img{
     width: 50%;
@@ -33,6 +33,7 @@ img{
 table {
     empty-cells: hide;
     vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #cookie-data {
     border-collapse: collapse;
@@ -46,7 +47,7 @@ table {
     padding: 10px;
 }
 #cookie-data th, td {
-    text-align: left;
+    text-align: center;
 }
 #table-top {
     background-color: lightblue;
@@ -54,12 +55,15 @@ table {
 }
 #total-per-hour {
     background-color: lightyellow;
+    border: 1px solid black;
 }
-#store-total{
+#store-total {
     background-color: lightyellow;
+    border: 1px solid black;
 }
 #net-total {
     background-color: yellow;
+    border: 1px solid black;
 }
 #hours {
     float: left;
@@ -81,37 +85,6 @@ table {
     padding-top: 40px;
     margin: auto;
     overflow: auto;
-}
-
-#tHead, #tBody, #tBot {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#tHead {
-    padding: 1px;
-    font-size: 16px;
-    margin: 0 0 0 85px;
-}
-.tableHead {
-    background-color: rgb(114,95,56);
-    margin: 0 4px;
-}
-#tBody ul {
-    background-color: rgb(157,143,120);
-    display: inline-block;
-    font-size: 15px;
-    margin: 0 15px;
-}
-#tBody li{
-    background-color: rgb(157,143,120);
-}
-#tBot {
-     margin: 0 0 0 95px;
-}
-.tableBottom{
-    background-color: rgb(114,95,56);
-    color: rgb(184, 10, 10);
-    margin: 0 5px;
 }
 h1{
     text-align: center;
