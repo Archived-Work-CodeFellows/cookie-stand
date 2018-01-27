@@ -20,9 +20,26 @@ div {
     text-align: center;
     
 }
+.table-wrap{
+    margin: auto;
+    margin-left: 25%;
+}
 img{
     width: 50%;
     height: 50%;
+}
+#cookie-data {
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+#cookie-data tr:hover {
+    background-color: bisque;
+}
+#cookie-data th, tr, td {
+    border: 1px solid black;
+}
+#cookie-data th, td {
+    text-align: left;
 }
 #hours {
     float: left;

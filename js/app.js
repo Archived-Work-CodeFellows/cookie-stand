@@ -2,6 +2,7 @@
 
 //define div container
 var container = document.createElement('div');
+container.setAttribute('class','table-wrap');
 document.body.appendChild(container);
 var table = document.createElement('table');
 table.setAttribute('id','cookie-data');
