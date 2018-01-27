@@ -26,5 +26,5 @@
 > Above is the salmon. This is the main logo and concept of the cookie design.
 > Taking this we have the current color swatch
 
-![alt text](/color-swatch-salmon.png "Color Swatch created from Salmon")
+![alt text](color-swatch-salmon.png "Color Swatch created from Salmon")
 
