@@ -1,6 +1,6 @@
 # Style Guide for Salmon Cookies
 
-Mission -
+### Mission -
 ***
 > To create a coffee time confection that is the perfect match for
 > for a steaming cup of coffee on a grey Seattle morning.
@@ -9,7 +9,7 @@ Mission -
 > into a salmon shape cookie that represents the pacific northwest
 > style.
 
-Target Audience - 
+### Target Audience - 
 ***
 
 > Current target is utilizing tourism as it's main source of value
@@ -18,8 +18,13 @@ Target Audience -
 > enjoyed by locals to create a sense of connection with the grey tones
 > that Seattle itself expresses throughout the year.
 
-Logo - 
+### Logo - 
 ***
 
-![alt text](../img/salmon.png "fun stuff")
+![alt text](../img/salmon.png "Salmon Logo")
+
+> Above is the salmon. This is the main logo and concept of the cookie design.
+> Taking this we have the current color swatch
+
+![alt text](/color-swatch-salmon.png "Color Swatch created from Salmon")
 
