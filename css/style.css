@@ -41,6 +41,7 @@ table {
 }
 #store-name{
     background-color: lightgray;
+    text-align: left;
 }
 #cookie-data th, td {
     border-bottom: 1px solid black;
@@ -56,9 +57,11 @@ table {
 #total-per-hour {
     background-color: lightyellow;
     border: 1px solid black;
+    color: red;
 }
 #store-total {
     background-color: lightyellow;
+    color: red;
     border: 1px solid black;
 }
 #net-total {

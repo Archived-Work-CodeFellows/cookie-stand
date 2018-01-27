@@ -58,8 +58,9 @@ function headerGenerator() {
   var tRow = document.createElement('tr');
   tRow.setAttribute('id','table-top');
   table.appendChild(tRow);
-  var tdEmpty = document.createElement('td');
-  tRow.appendChild(tdEmpty);
+  var tHours = document.createElement('th');
+  tHours.textContent = 'Hours:';
+  tRow.appendChild(tHours);
   var thEl = [];
   for (var i = 0; i < hours.length; i++){
     thEl[i] = document.createElement('th');
@@ -77,7 +78,7 @@ function footerGenerator() {
   table.appendChild(tRow);
   var thBegin = document.createElement('th');
   tRow.setAttribute('id','total-per-hour');
-  thBegin.textContent = 'Totals/Hour';
+  thBegin.textContent = 'Totals/Hour:';
   tRow.appendChild(thBegin);
   var total = 0;
   for(var i = 0; i < hours.length; i++) {
