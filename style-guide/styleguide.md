@@ -34,5 +34,14 @@
 
 > We've come up with the following color swatch
 
-![alt text](color-swatch-skyline.png "Color Swatch created from Skyline");
+![alt text](color-swatch-skyline.png "Color Swatch created from Skyline")
+
+### Overall Design Thought
+***
+
+> Originally the thought was to go a more homey approach with the warm colors of the
+> salmon. The Pacific Northwest has a lot of forest, wood house feelings so it
+> seemed appropriate but now I think that potentially using the skyline as a background,
+> go a more minimalistic style that is modern and straight forward for both the user
+> and the company management to see important information regarding shop progression
 
