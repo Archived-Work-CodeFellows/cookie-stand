@@ -52,7 +52,7 @@ table {
 }
 #cookie-data {
     border-collapse: collapse;
-    margin-top: 30px;
+    margin-top: 10%;
 }
 #store-name{
     background-color: lightgray;
@@ -104,6 +104,17 @@ table {
     font-size: 25px;
     color: rgb(62,51,61);
     background-color: rgba(180,206,218,0.9);
+    height: auto;
+    padding-top: 40px;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+}
+#box-top {
+    font-size: 25px;
+    color: rgb(62,51,61);
+    background-color: rgba(180,206,218,0.9);
+    width: 100%;
     height: auto;
     padding-top: 40px;
     margin: auto;
