@@ -11,7 +11,6 @@
 
 ### Target Audience - 
 ***
-
 > Current target is utilizing tourism as it's main source of value
 > as the novelty of a fish shape/fish taste cookie is a unique concept
 > especially to be paired with a coffee-based drink. They will also be
@@ -38,7 +37,6 @@
 
 ### Overall Design Thought
 ***
-
 > Originally the thought was to go a more homey approach with the warm colors of the
 > salmon. The Pacific Northwest has a lot of forest, wood house feelings so it
 > seemed appropriate but now I think that potentially using the skyline as a background,
