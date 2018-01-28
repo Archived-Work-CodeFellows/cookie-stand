@@ -2,7 +2,11 @@
     margin: 0;
 }
 body {
-    background-color: rgb(160,126,102);
+    /* background-color: rgb(160,126,102); */
+    background-image: url("../img/sky-edit-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .nav li{
     display: inline;
@@ -26,7 +30,7 @@ div {
     margin: auto;
     margin-left: 13%;
 }
-img{
+#salmon img{
     width: 50%;
     height: 50%;
 }
