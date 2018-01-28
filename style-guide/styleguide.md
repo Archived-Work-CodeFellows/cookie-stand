@@ -18,7 +18,7 @@
 > enjoyed by locals to create a sense of connection with the grey tones
 > that Seattle itself expresses throughout the year.
 
-### Logo - 
+### Logo/Color Scheme - 
 ***
 
 ![alt text](../img/salmon.png "Salmon Logo")
@@ -27,4 +27,12 @@
 > Taking this we have the current color swatch
 
 ![alt text](color-swatch-salmon.png "Color Swatch created from Salmon")
+
+> Next we have a free stock photo of a grey seattle
+
+![alt text](../img/seattle-skyline.jpg "Seattle Photo")
+
+> We've come up with the following color swatch
+
+![alt text](color-swatch-skyline.png "Color Swatch created from Skyline");
 
