@@ -18,7 +18,13 @@ body {
     margin-left: 0px;
     padding-left: 0px;
 }
-
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    border: 1px solid black;
+    float: right;
+    margin-right: 10%;
+}
 li {
     list-style: none;
 }
@@ -27,19 +33,22 @@ div {
     
 }
 .table-wrap{
+    clear: both;
     overflow: auto;
     margin: auto;
     margin-left: 13%;
 }
 #salmon img{
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 30%;
     float: left;
+
 }
 table {
     empty-cells: hide;
     vertical-align: bottom;
     font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
 }
 #cookie-data {
     border-collapse: collapse;
@@ -75,27 +84,36 @@ table {
     border: 1px solid black;
 }
 #hours {
-    float: left;
-    margin: 0 5px;
+    float: right;
+    width: 30%;
+    margin-top: 18%;
+ 
+    
 }
 #info {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: wheat;
-    float: left;
+    clear: right;
+    float: right;
     width: 30%;
-    margin: 0 15px;
+    margin-top: 2%;
 }
 
 #welcome-quote {
     font-family: 'Lobster', cursive;
-    font-size: 28px;
+    font-size: 25px;
     color: rgb(62,51,61);
-    background-color: rgb(180,206,218);
+    background-color: rgba(180,206,218,0.9);
     height: auto;
     padding-top: 40px;
     margin: auto;
     overflow: auto;
+    position: fixed;
 }
+.spot-two #info, #hours {
+    background-color: rgba(180,206,218,0.9);
+
+}   
 h1{
     text-align: center;
 }
