@@ -129,10 +129,10 @@ function handleLocationCreate(event){
   locations[locations.length-1].render();
   footerGenerator();
 
-  event.target.storename = null;
-  event.target.maxCPH = null;
-  event.target.minCPH = null;
-  event.target.avgcookie = null;
+  event.target.storename.value = null;
+  event.target.maxCPH.value = null;
+  event.target.minCPH.value = null;
+  event.target.avgcookie.value = null;
 
 }
 
