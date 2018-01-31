@@ -113,7 +113,6 @@ function populateLocations() {
 populateLocations();
 
 function handleLocationCreate(event){
-  console.log(event);
   event.preventDefault();
 
   var name = event.target.storename.value;
@@ -121,10 +120,9 @@ function handleLocationCreate(event){
   var custMinPerH = parseInt(event.target.minCPH.value);
   var avgCookie = parseFloat(event.target.avgcookie.value);
 
-  new MakeStore(name, custMinPerH, custMaxPerH, avgCookie);
+  if(!name || !custMaxPerH || !custMinPerH || !avgCookie) return alert('No empty fields!');
 
-  var trFoot = document.getElementById('total-per-hour');
-  table.removeChild(trFoot);
+  new MakeStore(name, custMinPerH, custMaxPerH, avgCookie);
 
   locations[locations.length-1].render();
   footerGenerator();
