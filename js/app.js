@@ -114,15 +114,19 @@ populateLocations();
 
 function handleLocationCreate(event){
   event.preventDefault();
+  var required = 'Field is required';
 
   var name = event.target.storename.value;
   var custMaxPerH = parseInt(event.target.maxCPH.value);
   var custMinPerH = parseInt(event.target.minCPH.value);
   var avgCookie = parseFloat(event.target.avgcookie.value);
 
-  if(!name || !custMaxPerH || !custMinPerH || !avgCookie) return alert('No empty fields!');
+  if(!name || !custMaxPerH || !custMinPerH || !avgCookie) return alert('Fields are required!');
 
   new MakeStore(name, custMinPerH, custMaxPerH, avgCookie);
+
+  var trFoot = document.getElementById('total-per-hour');
+  table.removeChild(trFoot);
 
   locations[locations.length-1].render();
   footerGenerator();

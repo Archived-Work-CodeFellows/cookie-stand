@@ -23,7 +23,7 @@ body {
     margin-top: 35px;
     border: 1px solid black;
     float: right;
-    margin-right: 10%;
+    margin-right: 11%;
 }
 li {
     list-style: none;
@@ -47,6 +47,17 @@ div {
 
 #form-wrapper {
     padding-top: 110px;
+    padding-left: 32%;
+    width: 35%;
+    font-size: 15px;
+}
+#form-section{
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 5px 5px 10px 5px;
+}
+#form-section input {
+    float: right;
 }
 
 table {
