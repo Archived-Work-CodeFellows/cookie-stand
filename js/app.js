@@ -11,6 +11,7 @@ container.appendChild(table);
 var locations = [];
 var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 var netTotal = 0;
+var storeForm = document.getElementById('store-form');
 
 function MakeStore(name,custMinPerH,custMaxPerH,cookieAvg) {
 
@@ -40,7 +41,7 @@ MakeStore.prototype.render = function() {
   table.appendChild(tRow);
   var thEl = document.createElement('th');
   thEl.setAttribute('scope', 'row');
-  tRow.setAttribute('id', 'store-name');
+  tRow.setAttribute('id', 'location-name');
   thEl.textContent = this.name;
   tRow.appendChild(thEl);
   var tData = [];
@@ -73,6 +74,7 @@ function headerGenerator() {
   tRow.appendChild(thEnd);
 }
 function footerGenerator() {
+  netTotal = 0;
   var tData = [];
   var tRow = document.createElement('tr');
   table.appendChild(tRow);
@@ -109,3 +111,29 @@ function populateLocations() {
   footerGenerator();
 }
 populateLocations();
+
+function handleLocationCreate(event){
+  console.log(event);
+  event.preventDefault();
+
+  var name = event.target.storename.value;
+  var custMaxPerH = parseInt(event.target.maxCPH.value);
+  var custMinPerH = parseInt(event.target.minCPH.value);
+  var avgCookie = parseFloat(event.target.avgcookie.value);
+
+  new MakeStore(name, custMinPerH, custMaxPerH, avgCookie);
+
+  var trFoot = document.getElementById('total-per-hour');
+  table.removeChild(trFoot);
+
+  locations[locations.length-1].render();
+  footerGenerator();
+
+  event.target.storename = null;
+  event.target.maxCPH = null;
+  event.target.minCPH = null;
+  event.target.avgcookie = null;
+
+}
+
+storeForm.addEventListener('submit', handleLocationCreate);

@@ -44,6 +44,11 @@ div {
     float: left;
 
 }
+
+#form-wrapper {
+    padding-top: 110px;
+}
+
 table {
     empty-cells: hide;
     vertical-align: bottom;
@@ -52,9 +57,9 @@ table {
 }
 #cookie-data {
     border-collapse: collapse;
-    margin-top: 10%;
+    margin-top: 1%;
 }
-#store-name{
+#location-name{
     background-color: lightgray;
     text-align: left;
 }
