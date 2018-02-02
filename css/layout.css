@@ -1,13 +1,17 @@
 body {
     background-color: rgb(180,206,218);
-    background-image: url("../img/sky-edit-1.jpg");
+    background-image: url("../assets/sky-edit-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+main h3 {
+    font-size: 15px;
+}
+
 nav {
-    width: 1000px;
+    width: 960px;
     margin: 0px auto;
 }
 header {
@@ -16,6 +20,8 @@ header {
 }
 header img {
     float: left;
+    width: 400px;
+    height: 100px;
 }
 header ul li {
     display: inline-block;
@@ -30,19 +36,54 @@ a {
     text-decoration: none;
 }
 main {
-    width: 1000px;
-    margin: 10px auto;
+    width: 960px;
+    margin: 5px auto;
 }
 main .family{
     float: left;
-    margin: 0px 20px 5px 10px;
+    margin: 5px 25px 10px 0px;
+    width: 640px;
+    height: 300px;
+}
+
+#big-fish{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quote {
+    float: left;
+    margin: inherit;
+    width: 270px;
+    height: 300px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: rgb(62,51,61);
+    background-color: rgba(180,206,218,0.9);
+    text-align: center;
+}
+
+#fish-cookies, #shirt, #cutter, #frosted{
+    width: 220px;
+    height: 200px;
 }
 
 main ul li {
     clear: both;
     display: inline-block;
-    margin: 5px 25px 5px 0px;
+    margin: 5px 5px;
 }
 main ul li:last-child{
     margin-right: 0px;
+}
+
+div{
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+
+footer {
+    background-color: rgba(180,206,218,0.9);
+    height: 100px;
 }
