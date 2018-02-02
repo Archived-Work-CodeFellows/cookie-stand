@@ -114,7 +114,7 @@ populateLocations();
 
 function handleLocationCreate(event){
   event.preventDefault();
-  var required = 'Field is required';
+  //var required = 'Field is required';
 
   var name = event.target.storename.value;
   var custMaxPerH = parseInt(event.target.maxCPH.value);
