@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(180,206,218);
+    background-image: url("../img/sky-edit-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 1000px;
+    margin: 0px auto;
+}
+header {
+    background-color: rgba(180,206,218,0.9);
+    height: 100px;
+}
+header img {
+    float: left;
+}
+header ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 0 25px;
+    font-size: 20px;
+    border: 1px solid black;
+    
+}
+a {
+    text-decoration: none;
+}
+main {
+    width: 1000px;
+    margin: 10px auto;
+}
+main .family{
+    float: left;
+    margin: 0px 20px 5px 10px;
+}
+
+main ul li {
+    clear: both;
+    display: inline-block;
+    margin: 5px 25px 5px 0px;
+}
+main ul li:last-child{
+    margin-right: 0px;
+}
