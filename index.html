@@ -2,46 +2,67 @@
 <html>
     <head>
         <title>Salmon Cookies</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/layout.css"/>
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster" rel="stylesheet">
     </head>
     <body>
-        <div id="welcome-quote">
-                <div id="salmon">
-                        <img src="img/salmon.png" alt="picture of salmon">
-                </div>
-            <p>
-                Salmon Cookies bring a delightful new flavor to the Pacific Northwest.
-                Enjoy a tasty treat to compliment your morning coffee and enrich your
-                soul on a gray Seattle morning.
-            </p>
-            <ul class="nav">
-                    <li>Another</li>
-                    <li>Specials</li>
-                    <li>About</li>
+        <header>
+            <nav>
+                <img id="logo" src="assets/chinook.jpg">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     <li><a href="pages/sales.html">Sales</a></li>
                 </ul>
-        </div>
-        <div class="spot-two">
-            <div id="hours">
-                <h3>Hours of Operations</h3>
-                <p>6AM - 8PM</p>
-                <h3>Locations</h3>
-                <p>First and Pike</p>
-                <p>SeaTac Airport</p>
-                <p>Seattle Center</p>
-                <p>Capitol Hill</p>
-                <p>Alki</p>
-            </div>
-            <div id="info">
-                <h3>Spotlight</h3>
+            </nav>
+        </header>
+        <main>
+            <img class="family" src="assets/family.jpg">
+            <div id="quote"> 
                 <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Salmon Cookies bring a delightful new flavor to the Pacific Northwest.
+                    Enjoy a tasty treat to compliment your morning coffee and enrich your
+                    soul on a gray Seattle morning.
                 </p>
             </div>
-        </div>
+            <img id="big-fish" src="assets/salmon.png">
+            <section>
+                <div id="sm-contain">
+                    <h3>Hours of Operation</h3>
+                    <p>Every day 6am - 8pm</p>
+                </div>
+                <div id="sm-contain">
+                    <h3>Testimonials</h3>
+                    <p><blockquote id="quotes">
+                        These cookies are the best! I enjoy having the taste of fish but in a bite size
+                        atmosphere! 
+                    </blockquote></p>
+                </div>
+                <div id="sm-contain">
+                    <h3>Locations</h3>
+                    <p>First and Pike</p>
+                    <p>SeaTac Airport</p>
+                    <p>Seattle Center</p>
+                    <p>Capitol Hill</p>
+                    <p>Alki</p>
+                </div>
+            </section>      
+            <ul>
+                <li>
+                    <img id="fish-cookies" src="assets/fish.jpg">
+                </li>
+                <li>
+                    <img id="cutter" src="assets/cutter.jpeg">
+                </li>
+                <li>
+                    <img id="shirt" src="assets/shirt.jpg">
+                </li>
+                <li>
+                    <img id="frosted" src="assets/frosted-cookie.jpg">
+                </li>
+            </ul>                  
+        </main>
     </body>
 </html>

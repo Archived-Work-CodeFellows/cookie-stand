@@ -71,7 +71,10 @@ main .family{
     background-color: rgba(180,206,218,0.9);
     text-align: center;
 }
-
+#quotes{
+    margin-top: 50px;
+    font-style: italic;
+}
 #fish-cookies, #shirt, #cutter, #frosted{
     width: 225px;
     height: 200px;

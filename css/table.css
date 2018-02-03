@@ -1,0 +1,66 @@
+#form-wrapper {
+    margin-top: 5px;
+    padding-top: 5px;
+    margin-left: 32%;
+    width: 600px;
+    font-size: 12px;
+    border: 1px solid black;
+    text-align: center;
+}
+#form-section{
+    float: left;
+    border-bottom: 1px solid black;
+    padding: 5px 5px 10px 5px;
+}
+#form-section input {
+    float: right;
+    margin-left: 25px;
+}
+#create-store {
+    clear: both;
+    align-content: center;
+}
+.table-wrap{
+    clear: both;
+    overflow: auto;
+    margin: 0px auto 0px 180px;
+}
+table {
+    empty-cells: hide;
+    vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+#cookie-data {
+    border-collapse: collapse;
+    margin-top: 1%;
+}
+#location-name{
+    background-color: lightgray;
+    text-align: left;
+}
+#cookie-data th, td {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+#cookie-data th, td {
+    text-align: center;
+}
+#table-top {
+    background-color: lightblue;
+    height: 50px;
+}
+#total-per-hour {
+    background-color: lightyellow;
+    border: 1px solid black;
+    color: red;
+}
+#store-total {
+    background-color: lightyellow;
+    color: red;
+    border: 1px solid black;
+}
+#net-total {
+    background-color: yellow;
+    border: 1px solid black;
+}

@@ -2,18 +2,23 @@
 <html>
     <head>
     <title>Sales Page</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/table.css"/>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster" rel="stylesheet">
     </head>
     <body>
-        <div id="box-top">
-        <ul class="nav">
-            <li><a href="../index.html">Home</a></li>
-            <li>Another</li>
-            <li>Specials</li>
-            <li>About</li>
-        </ul>
-        </div>
+        <header>
+                <nav>
+                <img id="logo" src="../assets/chinook.jpg">
+                   <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Sales</a></li>
+                    </ul>
+                </nav>
+        </header>
         <div id="form-wrapper">
         <form id='store-form'>
             <fieldset>
@@ -35,11 +40,12 @@
                 <input name="avgcookie" type="text" />
                 </div>
             </br>
-                <button id="create-store" type="submit">Create Location</button>
-
+            <div id="create-store">
+            <button id="create-store" type="submit">Create Location</button>
+            </div>
             </fieldset>
         </form>
-        </div>
+    </div>
         <script src="../js/app.js"></script>
     </body>
 </html>
