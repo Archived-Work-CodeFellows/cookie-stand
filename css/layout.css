@@ -107,6 +107,16 @@ div{
     float: left;
     margin: 5px 10px 5px 10px;
 }
+#about {
+    font-family: 'Lobster', cursive;
+    margin: 10px auto 5px 120px;
+    font-size: 34px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(180,206,218,0.9);
+    width: 700px;
+    height: 230px;
+}
 
 footer {
     background-color: rgba(180,206,218,0.9);
