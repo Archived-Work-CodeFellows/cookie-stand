@@ -4,10 +4,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Amatic+SC', Arial, Helvetica, sans-serif;
 }
 
 main h3 {
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: steelblue
 }
 
 nav {
@@ -23,13 +26,18 @@ header img {
     width: 400px;
     height: 100px;
 }
+header ul{
+    float: right;
+    margin-top: 55px;
+    margin-right: 25px;
+    border: 1px solid black;
+}
 header ul li {
     display: inline-block;
-    margin-top: 30px;
-    margin-left: 30px;
-    padding: 0 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 0 15px;
     font-size: 20px;
-    border: 1px solid black;
     
 }
 a {
@@ -65,8 +73,19 @@ main .family{
 }
 
 #fish-cookies, #shirt, #cutter, #frosted{
-    width: 220px;
+    width: 225px;
     height: 200px;
+}
+#sm-contain {
+    width: 295px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(180,206,218,0.9);
+
+}
+#sm-contain p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 main ul li {
@@ -76,6 +95,9 @@ main ul li {
 }
 main ul li:last-child{
     margin-right: 0px;
+}
+section {
+    float: left;
 }
 
 div{
