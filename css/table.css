@@ -1,8 +1,8 @@
 #form-wrapper {
     margin-top: 5px;
     padding-top: 5px;
-    margin-left: 32%;
-    width: 600px;
+    margin-left: 41%;
+    width: 250px;
     font-size: 12px;
     border: 1px solid black;
     text-align: center;
@@ -13,12 +13,11 @@
     padding: 5px 5px 10px 5px;
 }
 #form-section input {
-    float: right;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 #create-store {
     clear: both;
-    align-content: center;
+    margin-left: 35px;
 }
 .table-wrap{
     clear: both;

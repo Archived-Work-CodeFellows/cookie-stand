@@ -123,6 +123,10 @@ function handleLocationCreate(event){
 
   if(!name || !custMaxPerH || !custMinPerH || !avgCookie) return alert('Fields are required!');
 
+  for(var i = 0; i < locations.length; i++){
+    if(name === locations[i].name) return alert('Store Location Already Exists!');
+  }
+
   new MakeStore(name, custMinPerH, custMaxPerH, avgCookie);
 
   var trFoot = document.getElementById('total-per-hour');
